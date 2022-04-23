@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{BBD5165E-15EC-477E-8D6A-827327186EC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\DataLayer.csproj", "{81F80545-D316-4D1F-97EB-98A138A84925}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuisnessLayer", "BuisnessLayer\BuisnessLayer.csproj", "{3EEEA289-A0BF-443E-873A-0AB5603D4C68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBD5165E-15EC-477E-8D6A-827327186EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBD5165E-15EC-477E-8D6A-827327186EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBD5165E-15EC-477E-8D6A-827327186EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBD5165E-15EC-477E-8D6A-827327186EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81F80545-D316-4D1F-97EB-98A138A84925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81F80545-D316-4D1F-97EB-98A138A84925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81F80545-D316-4D1F-97EB-98A138A84925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81F80545-D316-4D1F-97EB-98A138A84925}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EEEA289-A0BF-443E-873A-0AB5603D4C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EEEA289-A0BF-443E-873A-0AB5603D4C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EEEA289-A0BF-443E-873A-0AB5603D4C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EEEA289-A0BF-443E-873A-0AB5603D4C68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DB58B84-F660-440F-9054-95B81E62628F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,87 @@
+﻿<Window x:Class="WpfApp1.Dialogs.EditEmployeeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Dialogs"
+        mc:Ignorable="d"
+        Title="EditEmployeeWindow" Height="300" Width="800">
+
+    <Window.Resources>
+        <Style x:Key="tBx_style" TargetType="TextBox">
+            <Setter Property="Margin" Value="5 15 5 0"/>
+        </Style>
+        <Style x:Key="lab_style" TargetType="Label">
+            <Setter Property="Margin" Value="5 15 5 0"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid x:Name="grid">
+        <Grid.RowDefinitions>
+            <RowDefinition MaxHeight="40"></RowDefinition>
+            <RowDefinition MaxHeight="40"></RowDefinition>
+            <RowDefinition MaxHeight="40"></RowDefinition>
+            <RowDefinition MaxHeight="40"></RowDefinition>
+            <RowDefinition MaxHeight="40"></RowDefinition>
+            <RowDefinition MaxHeight="70"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Сотрудник (ФИО)" Grid.Row="0" Style="{StaticResource lab_style}"/>
+        <TextBox x:Name="textBoxFirstName" Style="{StaticResource tBx_style}" 
+                 Text="{Binding Path=FirstName}"
+                 Grid.Row="0" Grid.Column="1"/>
+        <TextBox x:Name="textBoxLastName" Style="{StaticResource tBx_style}"
+                 Text="{Binding Path=LastName}"
+                 Grid.Row="0" Grid.Column="2"/>
+        <TextBox x:Name="textBoxMiddleName" Style="{StaticResource tBx_style}"
+                 Text="{Binding Path=MiddleName}"
+                 Grid.Row="0" Grid.Column="3"/>
+
+        <Label Content="Адрес" Grid.Row="1" Style="{StaticResource lab_style}"/>
+        <TextBox x:Name="textBoxCity" Style="{StaticResource tBx_style}"
+                 Text="{Binding Path=City}"
+                 Grid.Row="1" Grid.Column="1"/>
+        <TextBox x:Name="textBoxStreet" Style="{StaticResource tBx_style}"
+                 Text="{Binding Path=Street}"
+                 Grid.Row="1" Grid.Column="2"/>
+        <TextBox x:Name="textBoxHome" Style="{StaticResource tBx_style}"
+                 Text="{Binding Path=Home}"
+                 Grid.Row="1" Grid.Column="3"/>
+
+
+        <Label Content="Телефон" Grid.Row="2" Style="{StaticResource lab_style}"/>
+        <TextBox x:Name="textBoxPhone" Style="{StaticResource tBx_style}"
+                 Text="{Binding Path=Phone}"
+                 Grid.Row="2" Grid.Column="1"/>
+
+
+        <Label Content="Должность" Grid.Row="3" Style="{StaticResource lab_style}"/>
+        <TextBox x:Name="textFilePosition" Style="{StaticResource tBx_style}"
+                 Text="{Binding Path=Position}"
+                 Grid.Row="3" Grid.Column="1"/>
+
+        <Label Content="Отдел" Grid.Row="4" Style="{StaticResource lab_style}"/>
+        <ComboBox x:Name="cBoxDepartament" Margin="5 15 5 0"
+                  Grid.Row="4" Grid.Column="1"/>
+        <!--<TextBox x:Name="textFileDepartament" Style="{StaticResource tBx_style}"
+                 Text="{Binding Path=Departament}"
+                 Grid.Row="4" Grid.Column="1"/>-->
+
+        <Button x:Name="ButtonOK" Content="OK" 
+                Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"
+                Margin="5 15" 
+                Click="ButtonOK_Click"/>
+        <Button x:Name="ButtonCancel" Content="Cancel" 
+                Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2"
+                Margin="5 15" 
+                Click="ButtonCancel_Click"/>
+
+    </Grid>
+
+</Window>

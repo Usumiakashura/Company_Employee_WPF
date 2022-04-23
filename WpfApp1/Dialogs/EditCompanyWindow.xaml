@@ -1,0 +1,43 @@
+﻿<Window x:Class="WpfApp1.Dialogs.EditCompanyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Dialogs"
+        mc:Ignorable="d"
+        Title="EditCompanyWindow" Height="140" Width="400">
+
+    <Window.Resources>
+        <Style x:Key="tBx_style" TargetType="TextBox">
+            <Setter Property="Margin" Value="5 15 5 0"/>
+        </Style>
+        <Style x:Key="lab_style" TargetType="Label">
+            <Setter Property="Margin" Value="5 15 5 0"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid x:Name="grid">
+        <Grid.RowDefinitions>
+            <RowDefinition MaxHeight="40"></RowDefinition>
+            <RowDefinition MaxHeight="70"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Название компании" Grid.Row="0" Style="{StaticResource lab_style}"/>
+        <TextBox x:Name="textBoxNameCompany" Style="{StaticResource tBx_style}" 
+                 Text="{Binding Path=NameCompany}"
+                 Grid.Row="0" Grid.Column="1"/>
+
+        <Button x:Name="ButtonOK" Content="OK" 
+                Grid.Row="5" Grid.Column="0" 
+                Margin="5 15" 
+                Click="ButtonOK_Click"/>
+        <Button x:Name="ButtonCancel" Content="Cancel" 
+                Grid.Row="5" Grid.Column="1" 
+                Margin="5 15" 
+                Click="ButtonCancel_Click"/>
+    </Grid>
+</Window>
